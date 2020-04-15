@@ -13,3 +13,15 @@ deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_10
 7) sudo apt update
 8) sudo apt install --install-recommends winehq-stable
 9) winecfg
+#Install winetricks
+wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+sudo chmod 777 winetricks
+#Configure wine env.
+wineboot --init
+~/winetricks dotnet40
+You can try to launch 3DMark11 installer via wine 3dmark11setup.exe and have any issue during installation.
+If you see error messagebox pop up from rundll32, you can ignore that.
+sudo apt install cabextract
+~/winetricks corefonts
+~/winetricks vcrun2010 d3dx11_43 d3dcompiler_47
+

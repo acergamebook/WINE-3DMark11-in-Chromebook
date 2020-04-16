@@ -18,10 +18,12 @@ wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetri
 sudo chmod 777 winetricks
 #Configure wine env.
 wineboot --init
+Must select Cancel when you see install Mono and Gecko messagebox.
 ~/winetricks dotnet40
 You can try to launch 3DMark11 installer via wine 3dmark11setup.exe and have any issue during installation.
 If you see error messagebox pop up from rundll32, you can ignore that.
 sudo apt install cabextract
 ~/winetricks corefonts
 ~/winetricks vcrun2010 d3dx11_43 d3dcompiler_47
+
 
